@@ -7,7 +7,11 @@
 class prison{
     private: 
         const int num_cells = 40;
+    public:
+    	int get_num_cells= num_cells -1;
+	
 };
+
 class prisioner{
     public:
         int num_prisioners;
