@@ -1,0 +1,269 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+class Prison{
+private:
+	string beds;
+
+
+
+
+double sentence; 
+      
+  
+
+
+
+	
+public:
+	void prisonblock(){
+	cout << "PRISON HAS 40 CELL BLOCKS" << endl;
+}
+	string prisoners;
+	string getprisoners(){
+	return prisoners;
+	}
+void setprisoners(string p)	{
+    prisoners = p;  
+}
+	
+	string getbeds(){
+	return beds;
+	}
+void setbeds(string b)	{
+    beds = b;  
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  double time;
+      
+      void amount()
+      { 
+           cout<< "Sentence Remaining in months is  "<<sentence-time<<endl;
+           }
+      
+      double setsentence(double sentencein)
+      {
+        sentence = sentencein;               
+        }  
+        
+      double getsentence()
+      {
+        return sentence;
+      }
+  
+       
+
+
+
+
+
+
+
+
+
+	void prisonerchildren(){
+	cout << "Children = 4" << endl;
+}
+	void prisonerresidence(){
+	cout << "Last residence = Compton, California" << endl;
+}
+	void prisonerwork(){
+	cout << "Hours worked = 42/week" << endl;
+}
+	void prisonercommisary(){
+	cout << "Commisary balance = $52" << endl;
+}
+void prisonercell(){
+	cout << "Cell number = 74" << endl;
+}
+
+void prisonerpayrate(){
+	cout << "Pay rate = 1.59 cents" << endl;
+}
+
+
+
+};
+
+class Guards{
+
+	
+public:
+	
+	void guardsweapon(){
+	cout << "favourite weapon = batton" << endl;
+}
+
+
+void guardsbeat(){
+	cout << "Preferred place to beat prisoners = Yard" << endl;
+}
+void guardsinfractions(){
+	cout << "Number of infractions = 12" << endl;
+}
+void guardscontraband(){
+	cout << "Carry contraband for prisoners = Yes, drugs and cell phones" << endl;
+}
+void guardsprobation(){
+	cout << "Probationary status = On Probation" << endl;
+}
+void guardsgang(){
+	cout << "Gang affiliation = Latin kings" << endl;
+
+}
+};
+
+
+int main(){
+ Prison block;
+ block.prisonblock();
+ 
+ Prison beds;
+ beds.setbeds("Prison beds = 81");
+ beds.getbeds();
+ cout << beds.getbeds() << endl;
+ 
+ Prison prisoners;
+ prisoners.setprisoners("Prisoners = 84");
+ prisoners.getprisoners();
+ cout << prisoners.getprisoners() << endl;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Prison punishment;   
+   
+    double sentencein; 
+    cout<<"Enter sentence time in months"<<endl;
+    cin>>sentencein;
+    
+    punishment.setsentence(sentencein);    
+        
+    cout<<"Time spent in months"<<endl;
+    cin>>punishment.time;      
+    
+    punishment.amount();    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Prison children;
+ children.prisonerchildren();
+ 
+  Prison residence;
+ residence.prisonerresidence();
+ 
+  Prison work;
+ work.prisonerwork();
+ 
+  Prison commisary;
+ commisary.prisonercommisary();
+ 
+   Prison cell;
+ cell.prisonercell();
+ 
+ 
+ Prison payrate;
+ payrate.prisonerpayrate(); 
+ 
+
+
+
+
+
+int use;
+
+cout << "Use the scale 1 to 5 to give health condition of the Guard "<<endl; 
+cin >> use;
+
+if (use<=1){
+cout <<"Excelent condition"<<endl;
+}
+else if (use<=2){
+cout <<"Good condition"<<endl;
+}
+else if (use<=3){
+cout <<"Fair condition"<<endl;
+}
+else if (use<=4){
+cout <<"Bad condition"<<endl;
+}
+else {
+	cout <<"Worst condition"<<endl;
+}
+
+
+
+
+
+
+
+ 
+ 
+  Guards weapon;
+ weapon.guardsweapon();
+ 
+ 
+ 
+ int yes;
+
+cout << "Steoid use - for NO press 0, for YES press 1 "<<endl; 
+cin >> use;
+
+if (yes>0){
+cout <<"YES"<<endl;
+}
+else {
+	cout <<"NO"<<endl;
+}
+
+
+
+ 
+ 
+ Guards beat;
+ beat.guardsbeat();
+ 
+ Guards infractions;
+ infractions.guardsweapon();
+ 
+ Guards contraband;
+ contraband.guardscontraband();
+ 
+ Guards probation;
+ probation.guardsprobation();
+ 
+ Guards gang;
+ weapon.guardsgang();
+ 
+ 
+ 
+ 
+ 
+ 
+system ("pause");
+return 0;
+
+}
